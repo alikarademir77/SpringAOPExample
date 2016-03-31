@@ -10,7 +10,7 @@
 	 
 	<!-- Configure Employee Bean and initialize it -->
 	<bean name="employee" class="com.journaldev.spring.model.Employee">
-	    <property name="name" value="Dummy Name"></property>
+	    <property name="name" value="My Dummy Name"></property>
 	</bean>
 	 
 	<!-- Configure EmployeeService bean -->
@@ -21,8 +21,8 @@
 <!-- Configure Aspect Beans, without this Aspects advices wont execute -->
 <bean name="employeeAspect" class="com.journaldev.spring.aspect.EmployeeAspect" />
 <bean name="employeeAspectPointcut" class="com.journaldev.spring.aspect.EmployeeAspectPointcut" />
-<!-- <bean name="employeeAspectJoinPoint" class="com.journaldev.spring.aspect.EmployeeAspectJoinPoint" /> -->
-<!-- <bean name="employeeAfterAspect" class="com.journaldev.spring.aspect.EmployeeAfterAspect" /> -->
+<bean name="employeeAspectJoinPoint" class="com.journaldev.spring.aspect.EmployeeAspectJoinPoint" />
+<bean name="employeeAfterAspect" class="com.journaldev.spring.aspect.EmployeeAfterAspect" />
 <!-- <bean name="employeeAroundAspect" class="com.journaldev.spring.aspect.EmployeeAroundAspect" /> -->
 <!-- <bean name="employeeAnnotationAspect" class="com.journaldev.spring.aspect.EmployeeAnnotationAspect" /> -->
 
